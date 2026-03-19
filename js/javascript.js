@@ -1,4 +1,19 @@
+<<<<<<< HEAD
 
+=======
+// function checkPass(event){
+//    event.preventDefault();
+//         const input = document.getElementById('user-pass').value;
+//     const key = "111111";
+//     if (input === key) {
+//         document.getElementById('form-box').style.display="none";
+//         document.getElementById('show-photo').style.display="block";
+//     } else {
+//         document.getElementById('user-pass').value ="";
+//         alert("Access denied !")
+//     }
+// }
+>>>>>>> 15ce3f76df8f3aab7ea8b4239a96caba8f9244b7
 function checkPass() {
     
     const input = document.getElementById('user-pass').value;
