@@ -1,7 +1,7 @@
 // function checkPass(event){
 //    event.preventDefault();
 //         const input = document.getElementById('user-pass').value;
-//     const key = "231020";
+//     const key = "111111";
 //     if (input === key) {
 //         document.getElementById('form-box').style.display="none";
 //         document.getElementById('show-photo').style.display="block";
