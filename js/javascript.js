@@ -13,7 +13,7 @@
 function checkPass() {
     
     const input = document.getElementById('user-pass').value;
-    const secretKey = "231020";
+    const secretKey = "111111";
     if (input === secretKey) {
         document.getElementById('secret-gallery').style.display="block";
         document.getElementById('login-box').style.display="none";
