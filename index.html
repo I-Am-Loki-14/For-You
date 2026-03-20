@@ -4,24 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Photo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="./js/javascript.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="login-box" class="login-box">
-        <h1>View Photo</h1>
 
-        <input type="password" placeholder="Enter password" required autofocus minlength="10" id="user-pass">
-        <button onclick="checkPass()">ဝင်ရန်နှိပ်ပါ</button>
+    <div class="show-photo">
+        <span id="display-area" style="border: 1px solid #222;display: block;">
+            <img src="./img/Burger.jpg" alt="" style="width: 100%;height: 100%;">
+        </span>
+        <div class="thumb-photo">
+
+            <img src="./img/bora-bora-3023437_1920.jpg" alt="" onclick="sentToSpan(this)"
+                style="width: 100px;cursor: pointer;">
+            <img src="./img/Burger.jpg" alt="" onclick="sentToSpan(this)" style="width: 100px;cursor: pointer;">
+            <img src="./img/bora-bora-3023437_1920.jpg" alt="" onclick="sentToSpan(this)"
+                style="width: 100px;cursor: pointer;">
+            <img src="./img/Burger.jpg" alt="" onclick="sentToSpan(this)" style="width: 100px;cursor: pointer;">
+            <img src="./img/bora-bora-3023437_1920.jpg" alt="" onclick="sentToSpan(this)"
+                style="width: 100px;cursor: pointer;">
+            <img src="./img/Burger.jpg" alt="" onclick="sentToSpan(this)" style="width: 100px;cursor: pointer;">
+        </div>
     </div>
-    <div id="secret-gallery" style="display: none;" class="secret-gallery">
-        <h1>congratulation</h1>
-        <img src="./img/my-photo.jpg" alt="">
 
-    </div>
 
+    <script>
+        function sentToSpan(element) {
+            const target = document.getElementById('display-area');
+
+            target.innerHTML = `<img src="${element.src}" style="object-fit:cover;width:100%";height:100;">`
+
+        }
+    </script>
 </body>
 
 </html>
